@@ -7,7 +7,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "push": "git subtree push --prefix dist sysmine-frontend master",
-    "publish": "copyfiles && push"
+    "copy": "copy tmpbuild\\package.json dist\\package.json && copy tmpbuild\\server.js dist\\server.js && copy tmpbuild\\Procfile dist\\Procfile",
+    "git": "git add . && git commit -m %RANDOM% && git push",
+    "publish": "npm run build && npm run copy && npm run push"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
