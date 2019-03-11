@@ -1,0 +1,10 @@
+{
+    "name": "sysmine-frontend",
+    "version": "1.0.0",
+    "description": "Sysmine FrontEnd",
+    "author": "Bruno de Paula",
+    "private": true,
+    "scripts": {
+      "postinstall": "npm install express"
+    }
+   }
