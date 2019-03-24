@@ -4,15 +4,28 @@ export default {
   namespaced: true,
 
   state: {
-    items: []
+    items: [],
+    status: 0,
+    message: ''
   },
 
   getters: {
-    getItems: state => state.items
+    getItems: state => state.items,
+    getMessage: state => state.message,
+    getStatus: state => state.status,
   },
 
 
   mutations: {
+
+    SET_RESPONSE: (state, {
+      status,
+      message
+    }) => {
+      state.status = status
+      state.message = message
+    },
+
 
     SET_ITEMS: (state, items) => {
       state.items = items
@@ -73,8 +86,6 @@ export default {
       item
     }) {
 
-      console.log('store id', id);
-      console.log('store item', item);
       repository.updateItem(id, item).then(result => {
         commit('UPDATE_ITEM', {
           id,

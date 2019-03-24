@@ -163,10 +163,8 @@ export default {
     },
 
     save() {
-      console.log("saving editedItem", this.editedItem);
       if (this.editedIndex > -1) {
         Object.assign(this.items[this.editedIndex], this.editedItem);
-        console.log("saving editedItem 2", this.editedItem);
         this.updateItem({ id: this.editedItem.id, item: this.editedItem }).then(
           () => {
             this.showAlert();

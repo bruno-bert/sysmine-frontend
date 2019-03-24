@@ -4,6 +4,7 @@ import {
 
 const endpoint = 'fases';
 
+
 export default {
 
     getItems: () => {
@@ -15,9 +16,6 @@ export default {
     },
 
     updateItem: (id, item) => {
-        console.log('update id', id);
-        console.log('update item', item);
-
         return http.put(`${endpoint}/${id}`, item)
     },
 
