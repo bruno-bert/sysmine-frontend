@@ -1,0 +1,43 @@
+{
+
+  "nav": {
+
+    "configuration": {
+      "parameters": "General Parameters",
+      "operators": "Operators"
+    },
+
+    "maintenance": {
+      "title": "Maintenance",
+      "process": "List Procesess"
+    },
+
+    "administration": {
+      "title": "Administration",
+      "process-phase": "Process Phase",
+      "document-status": "Document Status"
+    }
+  },
+
+  "app": {
+
+    "id": "Id",
+    "search": "Search",
+    "updated_at": "Last Update",
+    "action": "Action",
+    "new": "New Item",
+    "edit": "Edit Item",
+    "reload": "Reload",
+    "confirm_delete": "Are you sure you want to delete this item ?",
+    "cancel": "Cancel",
+    "save": "Save"
+
+  },
+
+  "administration": {
+    "process-phase": {
+      "description": "Description"
+    }
+  }
+
+}

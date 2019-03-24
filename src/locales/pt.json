@@ -1,0 +1,43 @@
+{
+
+  "nav": {
+
+    "configuration": {
+      "parameters": "Parametros Gerais",
+      "operators": "Operadores"
+    },
+
+    "maintenance": {
+      "title": "Manutenção",
+      "process": "Listar Processos"
+    },
+
+    "administration": {
+      "title": "Administração",
+      "process-phase": "Processo - Fases",
+      "document-status": "Documento - Status"
+    }
+  },
+
+  "app": {
+
+    "id": "Id",
+    "search": "Procurar",
+    "updated_at": "Atualizado em",
+    "action": "Ação",
+    "new": "Adicionar",
+    "edit": "Editar",
+    "reload": "Listar",
+    "confirm_delete": "Tem certeza que deseja excluir este item ?",
+    "cancel": "Cancelar",
+    "save": "Salvar"
+
+  },
+
+  "administration": {
+    "process-phase": {
+      "description": "Descrição"
+    }
+  }
+
+}
